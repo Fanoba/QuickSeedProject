@@ -69,3 +69,25 @@ Inicio → Explorar proyectos → Seleccionar proyecto
 ```
 
 ---
+
+
+
+ Levantar con Docker (Recomendado)
+Iniciar el contenedor
+bashdocker compose up
+
+La app estará disponible en http://localhost:8080
+
+Detener el contenedor
+bashdocker compose down
+Rebuild (si hubo cambios en el código)
+bashdocker compose up --build
+
+Instalación Local (sin Docker)
+1. Clonar el repositorio
+bashgit clone <url-del-repo>
+cd quickseed
+2. Instalar dependencias
+bashnpm install
+3. Levantar en desarrollo
+bashnpm run dev
